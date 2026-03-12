@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Archivo_Black, Montserrat } from "next/font/google";
 import "./globals.css";
 import { TooltipProvider } from "@/src/components/ui/tooltip";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const archivo = Archivo_Black({
+  weight: "400",
+  variable: "--font-archivo-black",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${archivo.variable} ${montserrat.variable} antialiased`}
       >
         <TooltipProvider>{children}</TooltipProvider>
       </body>
