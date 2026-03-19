@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Archivo_Black, Montserrat } from "next/font/google";
+import { Archivo, Montserrat } from "next/font/google";
 import "./globals.css";
 import { TooltipProvider } from "@/src/components/ui/tooltip";
 
-const archivo = Archivo_Black({
-  weight: "400",
-  variable: "--font-archivo-black",
+const archivo = Archivo({
+  variable: "--font-Archivo",
   subsets: ["latin"],
 });
 
